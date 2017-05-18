@@ -51,19 +51,20 @@ public class Starting extends Run {
 
             }
         });
-        JPanel pane1 = new JPanel();
+        /*JPanel pane1 = new JPanel();
         pane1.setLayout(new BorderLayout());
         for(int x = 0; x < 10; x++){
             JTextField text = new JTextField();
             text.setPreferredSize(new Dimension(70,30));
             pane1.add(text);
-        }
+        }*/
         pane.add(button1);
         pane.add(button2);
         pane.add(button3);
 
-        obj.add(pane1, BorderLayout.SOUTH);
-        obj.add(pane, BorderLayout.NORTH);
+        //obj.add(pane1, BorderLayout.SOUTH);
+        //obj.add(pane, BorderLayout.NORTH);
+        obj.add(pane);
         obj.setVisible(true);
         obj.setSize(640, 500);
         obj.setLocationRelativeTo(null);
