@@ -19,7 +19,7 @@ public class SheetNew {
     }
     public void WriteSheet(){
         try {
-            FileInputStream file = new FileInputStream(new File("C:\\Users\\chenl9645\\Desktop\\Test.xlsx"));
+            FileInputStream file = new FileInputStream(new File("C:\\Users\\chenl9645\\Desktop\\Test.xlsx")); // Enter your excel file path here
 
             //Create Workbook instance holding reference to .xlsx file
             XSSFWorkbook workbook = new XSSFWorkbook(file);

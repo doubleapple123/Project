@@ -11,17 +11,19 @@ import java.awt.event.ActionListener;
 public class Starting extends Run {
 
     public static void main(String[] args) {
+        //SheetNew obj1 = new SheetNew();
+
         Run obj = new Run("Window");
-        JButton button1 = new JButton("Basketball");
-        JButton button2 = new JButton("Football");
-        JButton button3 = new JButton("Boxing");
+        JButton basketball = new JButton("Basketball");
+        JButton football = new JButton("Football");
+        JButton boxing = new JButton("Boxing");
         JPanel pane = new JPanel();
 
-        button1.setPreferredSize(new Dimension(150,50));
-        button2.setPreferredSize(new Dimension(150,50));
-        button3.setPreferredSize(new Dimension(150,50));
+        basketball.setPreferredSize(new Dimension(150,50));
+        football.setPreferredSize(new Dimension(150,50));
+        boxing.setPreferredSize(new Dimension(150,50));
 
-        button1.addActionListener(new ActionListener() {
+        basketball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Run obj1 = new Run("New Window");
@@ -30,7 +32,7 @@ public class Starting extends Run {
                 obj1.setVisible(true);
             }
         });
-        button2.addActionListener(new ActionListener() {
+        football.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Run obj2 = new Run("New Window");
@@ -40,7 +42,7 @@ public class Starting extends Run {
 
             }
         });
-        button3.addActionListener(new ActionListener() {
+        boxing.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Run obj3 = new Run("New Window");
@@ -57,9 +59,9 @@ public class Starting extends Run {
             text.setPreferredSize(new Dimension(70,30));
             pane1.add(text);
         }*/
-        pane.add(button1);
-        pane.add(button2);
-        pane.add(button3);
+        pane.add(basketball);
+        pane.add(football);
+        pane.add(boxing);
 
         //obj.add(pane1, BorderLayout.SOUTH);
         //obj.add(pane, BorderLayout.NORTH);
