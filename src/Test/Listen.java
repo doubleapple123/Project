@@ -1,4 +1,6 @@
-package App;
+package Test;
+
+import App.Run;
 
 import javax.swing.*;
 
