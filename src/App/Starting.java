@@ -12,7 +12,7 @@ public class Starting extends Run {
 
     public static void main(String[] args) {
 
-
+        Table objT = new Table();
         Run obj = new Run("Window");
         JButton basketball = new JButton("Basketball");
         JButton football = new JButton("Football");
@@ -26,10 +26,7 @@ public class Starting extends Run {
         basketball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Run obj1 = new Run("BasketBall");
-                obj1.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-                obj1.setSize(640,640);
-                obj1.setVisible(true);
+                objT.DisBasketTab();
 
             }
         });
