@@ -14,7 +14,7 @@ public class Table {
 
         String [] col = {"This","Game","Date", "Time", "Network"};
         Object [][] data = {{"Thunder at 76ers","10/26/16","8:00 PM","ESPN"}
-        ,{"Rockets at Lackers", "10/26/16","10:30", "ESPN"}};
+        ,{"Rockets at Lakers", "10/26/16","10:30", "ESPN"}};
 
         JTable tab = new JTable(data,col);
 
