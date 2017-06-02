@@ -1,7 +1,5 @@
 package App;
 
-import App.Run;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,9 +11,8 @@ public class Table {
     public static void main(String[] args) {
         Run obj = new Run("TableTest");
 
-        String [] col = {"Utensil","Price"};
-        Object [][] data = {{"Fork", new Integer(5)}
-        ,{"Pencil", new Integer(1)}};
+        String [] col = {"Game","Date", "Time", "Network"};
+        Object [][] data = {{"Thunder at 76ers","10/26/16","8:00 PM","ESPN"},{"Rockets at Lackers", "10/26/16","10:30", "ESPN"}};
 
         JTable tab = new JTable(data,col);
 
