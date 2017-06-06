@@ -12,6 +12,7 @@ public class Starting extends Run {
 
     public static void main(String[] args) {
 
+        //create needed frame objects
         Table objT = new Table();
         Run obj = new Run("Window");
         JButton basketball = new JButton("Basketball");
@@ -23,6 +24,11 @@ public class Starting extends Run {
         football.setPreferredSize(new Dimension(150,50));
         boxing.setPreferredSize(new Dimension(150,50));
 
+        basketball.setBackground(Color.WHITE);
+        football.setBackground(Color.WHITE);
+        boxing.setBackground(Color.WHITE);
+
+        //does stuff when buttons are clicked
         basketball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -33,40 +39,29 @@ public class Starting extends Run {
         football.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Run obj2 = new Run("FootBall");
-                obj2.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-                obj2.setSize(640,640);
-                obj2.setVisible(true);
+                objT.DisFootTab();
 
             }
         });
         boxing.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Run obj3 = new Run("BaseBall");
-                obj3.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-                obj3.setSize(640,640);
-                obj3.setVisible(true);
+                objT.DisBaseTab();
 
             }
         });
-        /*JPanel pane1 = new JPanel();
-        pane1.setLayout(new BorderLayout());
-        for(int x = 0; x < 10; x++){
-            JTextField text = new JTextField();
-            text.setPreferredSize(new Dimension(70,30));
-            pane1.add(text);
-        }*/
+
+
+        //adds buttons to panel
         pane.add(basketball);
         pane.add(football);
         pane.add(boxing);
+        pane.setBackground(Color.DARK_GRAY);
 
-        //obj.add(pane1, BorderLayout.SOUTH);
-        //obj.add(pane, BorderLayout.NORTH);
+        //adds panel to frame
         obj.add(pane);
         obj.setVisible(true);
-        obj.setSize(640, 500);
+        obj.pack();
         obj.setLocationRelativeTo(null);
-
     }
 }
