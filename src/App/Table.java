@@ -14,7 +14,15 @@ public class Table{
 
         String [] col = {"Game","Date", "Time", "Network"};
         Object [][] data = {{"Thunder at 76ers","10/26/16","8:00 PM","ESPN"}
-        ,{"Rockets at Lakers", "10/26/16","10:30", "ESPN"}, {"Cavaliers at Raptors", "10/28/16", "7:00 PM", "ESPN"}};
+        ,{"Rockets at Lakers", "10/26/16","10:30", "ESPN"}
+        ,{"Cavaliers at Raptors", "10/28/16", "7:00 PM", "ESPN"}
+        ,{"Warriors At Pelican", "10/28/16", "9:30PM", "ESPN"}
+        ,{"Bulls at Celtics","11/2/16","8:00 PM","ESPN"}
+        ,{"Thunder at Clippers","11/2/16","10:30 PM","ESPN"}
+        ,{"Knicks at Bulls","11/4/16","8:00 PM","ESPN"}
+        ,{"Warriors at Lakers",	"11/4/16","10:30 PM","ESPN"}
+        ,{"Nets at Knicks","11/9/16","7:00 PM","ESPN"}
+        ,{"Rockets at Spurs","11/9/16","9:30 PM","ESPN"}};
 
         JTable tab = new JTable(data,col);
 
