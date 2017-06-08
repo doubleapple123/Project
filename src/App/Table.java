@@ -64,11 +64,15 @@ public class Table{
         Run obj = new Run("BaseBall Table");
         String [] col = {"Game","Date","Time","Network"};
         Object [][] data = {{"Cardinals at Reds","6/8/17","12:35 PM","MLBN"}
-        ,{"Angels at Tigers","6/8/17","1:10 PM","MLBN"},{"Giants at Brewers","6/8/17","2:10 PM","MLBN-O"}
-        ,{"Padres at DBacks","6/8/17","3:40 PM","MLBN"},{"Red Sox at Yankees","7:05 PM","ESPN"},
-                {"Orioles at Nationals","6/8/17","7:05 PM","MLBN-O"},{"Rockies at Cubs","6/9/17","2:20 PM","MLBN-O"},
-                {"Tigers at Red Sox","6/9/17","7:10 PM","MLBN-O"},{"Orioles at Yankees","6/9/17","7:35 PM","MLBN-O"},
-                {"Rangers at Nationals","6/10/17","12:05 PM","MLBN-O"}};
+        ,{"Angels at Tigers","6/8/17","1:10 PM","MLBN"}
+        ,{"Giants at Brewers","6/8/17","2:10 PM","MLBN-O"}
+        ,{"Padres at DBacks","6/8/17","3:40 PM","MLBN"}
+        ,{"Red Sox at Yankees","6/8/17","7:05 PM","ESPN"}
+        ,{"Orioles at Nationals","6/8/17","7:05 PM","MLBN-O"}
+        ,{"Rockies at Cubs","6/9/17","2:20 PM","MLBN-O"}
+        ,{"Tigers at Red Sox","6/9/17","7:10 PM","MLBN-O"}
+        ,{"Orioles at Yankees","6/9/17","7:35 PM","MLBN-O"}
+        ,{"Rangers at Nationals","6/10/17","12:05 PM","MLBN-O"}};
 
         JTable tab = new JTable(data,col);
 
