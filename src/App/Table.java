@@ -43,7 +43,7 @@ public class Table{
         Run obj = new Run("FootBall Table");
         String [] col = {"Game","Date","Time","Network"};
         Object [][] data = {{"Chiefs at Patriots","9/7/17","8:30 PM","NBC"}
-        ,{"Saints at Vikings","9/11/17","7:10 PM",}
+        ,{"Saints at Vikings","9/11/17","7:10 PM","ESPN"}
         ,{"Lions at Giants","9/18/17","8:30 PM","ESPN"}
         ,{"Cowboys at Cardinals","9/25/17","8:30 PM","ESPN"}
         ,{"Washington at Chiefs","10/2/17","8:15 PM","ESPN"}
