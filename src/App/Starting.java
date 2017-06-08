@@ -17,7 +17,7 @@ public class Starting extends Run {
         Run obj = new Run("Window");
         JButton basketball = new JButton("Basketball");
         JButton football = new JButton("Football");
-        JButton boxing = new JButton("Boxing");
+        JButton boxing = new JButton("Baseball");
         JPanel pane = new JPanel();
 
         basketball.setPreferredSize(new Dimension(150,50));
