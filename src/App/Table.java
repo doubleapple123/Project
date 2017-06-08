@@ -42,7 +42,23 @@ public class Table{
     public void DisFootTab(){
         Run obj = new Run("FootBall Table");
         String [] col = {"Game","Date","Time","Network"};
-        Object [][] data = {};
+        Object [][] data = {{"Chiefs at Patriots","9/7/17","8:30 PM","NBC"}
+        ,{"Saints at Vikings","9/11/17","7:10 PM",}
+        ,{"Lions at Giants","9/18/17","8:30 PM","ESPN"}
+        ,{"Cowboys at Cardinals","9/25/17","8:30 PM","ESPN"}
+        ,{"Washington at Chiefs","10/2/17","8:15 PM","ESPN"}
+        ,{"Vikings at Bears","10/9/17","8:30 PM","ESPN"}
+        ,{"Colts at Titans","10/16/17","8:30 PM","ESPN"}
+        ,{"Washington at Eagles","10/23/17","8:30 PM","ESPN"}
+        ,{"Broncos at Chiefs","10/30/17","8:15 PM","ESPN"}
+        ,{"Lions at Packers","11/6/17","8:30 PM","ESPN"}
+        ,{"Dolphins at Panthers","11/13/17","8:30 PM","ESPN"}
+        ,{"Falcons at SeaHawks","11/20/17","8:30 PM","ESPN"}
+        ,{"Texans at Ravens","11/27/17","8:30 PM","ESPN"}
+        ,{"Steelers at Bengals","12/4/17","8:30 PM","ESPN"}
+        ,{"Patriots at Dolphins","12/11/17","8:30 PM","ESPN"}
+        ,{"Falcons at Bucaneers","12/18/17","8:30 PM","ESPN"}
+        ,{"Raiders at Eagles","12/25/17","8:30 PM","ESPN"}};
 
         JTable tab = new JTable(data,col);
 
