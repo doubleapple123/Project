@@ -11,17 +11,17 @@ public class Table{
     public void DisBasketTab(){
         Run obj = new Run("BasketBall Table");
 
-        String [] col = {"Game","Date", "Time", "Network"};
-        Object [][] data = {{"Thunder at 76ers","10/26/16","8:00 PM","ESPN"}
-        ,{"Rockets at Lakers", "10/26/16","10:30", "ESPN"}
-        ,{"Cavaliers at Raptors", "10/28/16", "7:00 PM", "ESPN"}
-        ,{"Warriors At Pelican", "10/28/16", "9:30PM", "ESPN"}
-        ,{"Bulls at Celtics","11/2/16","8:00 PM","ESPN"}
-        ,{"Thunder at Clippers","11/2/16","10:30 PM","ESPN"}
-        ,{"Knicks at Bulls","11/4/16","8:00 PM","ESPN"}
-        ,{"Warriors at Lakers",	"11/4/16","10:30 PM","ESPN"}
-        ,{"Nets at Knicks","11/9/16","7:00 PM","ESPN"}
-        ,{"Rockets at Spurs","11/9/16","9:30 PM","ESPN"}};
+        String [] col = {"Number","Game","Date", "Time", "Network"};
+        Object [][] data = {{"0","Thunder at 76ers","10/26/16","8:00 PM","ESPN"}
+        ,{"1","Rockets at Lakers", "10/26/16","10:30", "ESPN"}
+        ,{"2","Cavaliers at Raptors", "10/28/16", "7:00 PM", "ESPN"}
+        ,{"2","Warriors At Pelican", "10/28/16", "9:30PM", "ESPN"}
+        ,{"3","Bulls at Celtics","11/2/16","8:00 PM","ESPN"}
+        ,{"4","Thunder at Clippers","11/2/16","10:30 PM","ESPN"}
+        ,{"5","Knicks at Bulls","11/4/16","8:00 PM","ESPN"}
+        ,{"6","Warriors at Lakers",	"11/4/16","10:30 PM","ESPN"}
+        ,{"7","Nets at Knicks","11/9/16","7:00 PM","ESPN"}
+        ,{"8","Rockets at Spurs","11/9/16","9:30 PM","ESPN"}};
 
         JTable tab = new JTable(data,col);
 

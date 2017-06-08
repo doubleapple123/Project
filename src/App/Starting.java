@@ -17,16 +17,16 @@ public class Starting extends Run {
         Run obj = new Run("Window");
         JButton basketball = new JButton("Basketball");
         JButton football = new JButton("Football");
-        JButton boxing = new JButton("Baseball");
+        JButton baseball = new JButton("Baseball");
         JPanel pane = new JPanel();
 
         basketball.setPreferredSize(new Dimension(150,50));
         football.setPreferredSize(new Dimension(150,50));
-        boxing.setPreferredSize(new Dimension(150,50));
+        baseball.setPreferredSize(new Dimension(150,50));
 
         basketball.setBackground(Color.WHITE);
         football.setBackground(Color.WHITE);
-        boxing.setBackground(Color.WHITE);
+        baseball.setBackground(Color.WHITE);
 
         //does stuff when buttons are clicked
         basketball.addActionListener(new ActionListener() {
@@ -43,7 +43,7 @@ public class Starting extends Run {
 
             }
         });
-        boxing.addActionListener(new ActionListener() {
+        baseball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 objT.DisBaseTab();
@@ -55,7 +55,7 @@ public class Starting extends Run {
         //adds buttons to panel
         pane.add(basketball);
         pane.add(football);
-        pane.add(boxing);
+        pane.add(baseball);
         pane.setBackground(Color.DARK_GRAY);
 
         //adds panel to frame
