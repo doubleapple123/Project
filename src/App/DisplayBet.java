@@ -8,38 +8,50 @@ import javax.swing.*;
 public class DisplayBet {
 
     public void BasketBet(String gameNum){
-        if(gameNum.equals("1")){
-            Run obj = new Run("Bet Window");
-            JPanel betPane = new JPanel();
-            JTextArea showGame = new JTextArea("Test");
-            betPane.add(showGame);
-            obj.add(betPane);
-            obj.setVisible(true);
-            obj.pack();
-            obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        }
-        else if(gameNum.equals("2")){
-            Run obj = new Run("Bet Window");
-            JPanel betPane = new JPanel();
-            JTextArea showGame = new JTextArea("Test");
-            betPane.add(showGame);
-            obj.add(betPane);
-            obj.setVisible(true);
-            obj.pack();
-            obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        }
-        else if(gameNum.equals("3")){
-            Run obj = new Run("Bet Window");
-            JPanel betPane = new JPanel();
-            JTextArea showGame = new JTextArea("Test");
-            betPane.add(showGame);
-            obj.add(betPane);
-            obj.setVisible(true);
-            obj.pack();
-            obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        }
-        else if(gameNum.equals("4")){
+        switch(gameNum) {
+            case "0":{
+                Run obj = new Run("Bet Window");
+                JPanel betPane = new JPanel();
+                JTextArea showGame = new JTextArea("Thunders at 76ers");
+                betPane.add(showGame);
+                obj.add(betPane);
+                obj.setVisible(true);
+                obj.pack();
+                obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                break;}
 
+            case "1": {
+                Run obj = new Run("Bet Window");
+                JPanel betPane = new JPanel();
+                JTextArea showGame = new JTextArea("Rockets at lakers");
+                betPane.add(showGame);
+                obj.add(betPane);
+                obj.setVisible(true);
+                obj.pack();
+                obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                break;}
+
+            case "2": {
+                Run obj = new Run("Bet Window");
+                JPanel betPane = new JPanel();
+                JTextArea showGame = new JTextArea("Test");
+                betPane.add(showGame);
+                obj.add(betPane);
+                obj.setVisible(true);
+                obj.pack();
+                obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                break;}
+
+            case "3":{
+                Run obj = new Run("Bet Window");
+                JPanel betPane = new JPanel();
+                JTextArea showGame = new JTextArea("Test");
+                betPane.add(showGame);
+                obj.add(betPane);
+                obj.setVisible(true);
+                obj.pack();
+                obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                break;}
         }
     }
 }

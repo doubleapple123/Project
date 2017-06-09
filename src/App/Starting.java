@@ -9,9 +9,6 @@ import java.awt.event.ActionListener;
  * Created by chenl9645 on 5/16/2017.
  */
 public class Starting extends Run {
-    public String betBasketBall = "";
-    public String betFootBall = "";
-    public String betBaseBall = "";
 
     public static void main(String[] args) {
 
