@@ -194,7 +194,14 @@ public class Table{
     {
         Run obj = new Run("Football Stats");
         String [] col = {"Team","Projected Wins"};
-        String [][] data ={{null, null}};
+        String [][] data= {{"Atlanta","11"},{"New Orleans","8"},{"New England","13"},{"Green Bay","9"}
+        ,{"Dallas","11"},{"Arizona","9"},{"Indianapolis","8"},{"San Diego","8"}
+        ,{"Oakland","8"},{"Buffalo","9"},{"Washington","8"},{"Pittsburgh","10"}
+        ,{"Kansas City","10"},{"Tennessee","10"},{"Carolina","7"},{"Philadelphia","9"}
+        ,{"Seattle","10"},{"Tampa Bay","8"},{"Miami","7"},{"Baltimore","9"},{"Denver","9"}
+        ,{"Detroit","7"},{"Minnesota","9"},{"Cincinnati","8"},{"Jacksonville","6"}
+        ,{"San Francisco","4"},{"NY Giants","8"},{"Houston","7"},{"Chicago","5"}
+        ,{"NY Jets","4"},{"Cleveland","3"},{"Los Angeles","3"}};
         JTable tab = new JTable(data,col);
 
         JPanel pane = new JPanel();
