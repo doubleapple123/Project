@@ -16,6 +16,7 @@ public class Starting extends Run {
     public static void main(String[] args) {
 
         //create needed frame objects
+        DisplayBet betObj = new DisplayBet();
         Starting objMain = new Starting();
         Table objT = new Table();
         Run obj = new Run("Window");
@@ -88,8 +89,8 @@ public class Starting extends Run {
                 Action action = new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        objMain.betBasketBall = betField.getText();
-                        System.out.println(objMain.betBasketBall);
+                       betObj.BasketBet(betField.getText());
+
                     }
                 };
                 betField.addActionListener(action);
