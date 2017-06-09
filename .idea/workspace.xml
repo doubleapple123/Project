@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/App/Starting.java" line="150" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdeb3a34-2e19-4413-84fe-d7cbcef787a1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Project/App/Table.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App/Table.java" afterPath="$PROJECT_DIR$/src/App/Table.java" />
-    </list>
+    <list default="true" id="bdeb3a34-2e19-4413-84fe-d7cbcef787a1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +63,7 @@
       <file leaf-file-name="Table.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App/Table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
+            <state relative-caret-position="1275">
               <caret line="85" column="54" lean-forward="false" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1057,7 +1053,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
+        <state relative-caret-position="1275">
           <caret line="85" column="54" lean-forward="false" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
