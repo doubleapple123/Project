@@ -12,8 +12,10 @@ public class DisplayBet {
             case "0":{
                 Run obj = new Run("Bet Window");
                 JPanel betPane = new JPanel();
-                JTextArea showGame = new JTextArea("Thunders at 76ers");
-                betPane.add(showGame);
+                JTextArea showGame = new JTextArea("Thunders at 76ers, Place bet");
+                JTextField betField = new JTextField();
+                betPane.add(showGame,betField);
+
                 obj.add(betPane);
                 obj.setVisible(true);
                 obj.pack();
@@ -23,8 +25,10 @@ public class DisplayBet {
             case "1": {
                 Run obj = new Run("Bet Window");
                 JPanel betPane = new JPanel();
-                JTextArea showGame = new JTextArea("Rockets at lakers");
-                betPane.add(showGame);
+                JTextArea showGame = new JTextArea("Rockets at lakers, Place bet");
+                JTextField betField = new JTextField();
+
+                betPane.add(showGame,betField);
                 obj.add(betPane);
                 obj.setVisible(true);
                 obj.pack();
@@ -34,8 +38,10 @@ public class DisplayBet {
             case "2": {
                 Run obj = new Run("Bet Window");
                 JPanel betPane = new JPanel();
-                JTextArea showGame = new JTextArea("Test");
-                betPane.add(showGame);
+                JTextArea showGame = new JTextArea("Warriors at Pelicans");
+                JTextField betField = new JTextField();
+
+                betPane.add(showGame,betField);
                 obj.add(betPane);
                 obj.setVisible(true);
                 obj.pack();
