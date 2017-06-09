@@ -9,12 +9,18 @@ import java.awt.event.ActionListener;
  * Created by chenl9645 on 5/16/2017.
  */
 public class Starting extends Run {
+    public String betBasketBall = "";
+    public String betFootBall = "";
+    public String betBaseBall = "";
 
     public static void main(String[] args) {
 
         //create needed frame objects
+        Starting objMain = new Starting();
         Table objT = new Table();
         Run obj = new Run("Window");
+        JPanel pane = new JPanel();
+
         JButton basketball = new JButton("Basketball");
         JButton football = new JButton("Football");
         JButton baseball = new JButton("Baseball");
@@ -24,7 +30,7 @@ public class Starting extends Run {
         JButton StatBasket= new JButton("Basketball Statistics");
         JButton StatBase= new JButton("Baseball Statistics");
         JButton StatFoot= new JButton("Football Statistics");
-        JPanel pane = new JPanel();
+
 
         basketball.setPreferredSize(new Dimension(150,50));
         football.setPreferredSize(new Dimension(150,50));
@@ -63,24 +69,51 @@ public class Starting extends Run {
 
             }
         });
+
+        //Bet buttons
+
         BetBasketball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                objT.DisBetBasketTab();
+
+                Run textFrameB = new Run("Betting");
+                JPanel textPane = new JPanel();
+                JTextField betField = new JTextField();
+                JTextArea betArea = new JTextArea();
+                betArea.setText("Input the game number");
+                betField.setPreferredSize(new Dimension(100,40));
+
+                textPane.add(betArea);
+                textPane.add(betField);
+                Action action = new AbstractAction() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        objMain.betBasketBall = betField.getText();
+                        System.out.println(objMain.betBasketBall);
+                    }
+                };
+                betField.addActionListener(action);
+                textFrameB.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                textFrameB.add(textPane);
+                textFrameB.setSize(400,100);
+                textFrameB.setVisible(true);
             }
         });
         BetBaseball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                objT.DisBetBaseTab();
+
             }
         });
         BetFootball.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                objT.DisBetFootTab();
+
             }
         });
+
+        //Stat buttons
+
         StatBasket.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

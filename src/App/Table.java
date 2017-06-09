@@ -110,7 +110,8 @@ public class Table{
         obj.pack();
     }
 
-    public void DisBetBasketTab()
+    //not used methods
+    /*public void DisBetBasketTab()
     {
 
     }
@@ -123,7 +124,8 @@ public class Table{
     public void DisBetFootTab()
     {
 
-    }
+    }*/
+
     public void DisStatBasketTab()
     {
         Run obj = new Run("Basketball Stats");
@@ -192,7 +194,22 @@ public class Table{
     {
         Run obj = new Run("Football Stats");
         String [] col = {"Team","Projected Wins"};
-        String [][] data ={{""}}
+        String [][] data ={{null, null}};
+        JTable tab = new JTable(data,col);
+
+        JPanel pane = new JPanel();
+
+        tab.setFillsViewportHeight(true);
+
+        pane.setBackground(Color.DARK_GRAY);
+        pane.setLayout(new BorderLayout());
+        pane.add(tab.getTableHeader(), BorderLayout.PAGE_START);
+        pane.add(tab, BorderLayout.CENTER);
+
+        obj.add(pane);
+        obj.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        obj.setVisible(true);
+        obj.pack();
 
     }
 }
