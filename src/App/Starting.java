@@ -18,11 +18,24 @@ public class Starting extends Run {
         JButton basketball = new JButton("Basketball");
         JButton football = new JButton("Football");
         JButton baseball = new JButton("Baseball");
+        JButton BetBasketball = new JButton("BetBasketball");
+        JButton BetFootball = new JButton("BetFootball");
+        JButton BetBaseball = new JButton("BetBaseball");
+        JButton StatBasket= new JButton("Basketball Statistics");
+        JButton StatBase= new JButton("Baseball Statistics");
+        JButton StatFoot= new JButton("Football Statistics");
         JPanel pane = new JPanel();
 
         basketball.setPreferredSize(new Dimension(150,50));
         football.setPreferredSize(new Dimension(150,50));
         baseball.setPreferredSize(new Dimension(150,50));
+        BetBasketball.setPreferredSize(new Dimension(250,60));
+        BetFootball.setPreferredSize(new Dimension(250,60));
+        BetBaseball.setPreferredSize(new Dimension(250,60));
+        StatBasket.setPreferredSize(new Dimension(150,50));
+        StatBase.setPreferredSize(new Dimension(150,50));
+        StatFoot.setPreferredSize(new Dimension(150,50));
+
 
         basketball.setBackground(Color.WHITE);
         football.setBackground(Color.WHITE);
@@ -50,12 +63,54 @@ public class Starting extends Run {
 
             }
         });
+        BetBasketball.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                objT.DisBetBasketTab();
+            }
+        });
+        BetBaseball.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                objT.DisBetBaseTab();
+            }
+        });
+        BetFootball.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                objT.DisBetFootTab();
+            }
+        });
+        StatBasket.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                objT.DisStatBasketTab();
+            }
+        });
+        StatBase.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                objT.DisStatBaseTab();
+            }
+        });
+        StatFoot.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                objT.DisStatFootTab();
+            }
+        });
 
 
         //adds buttons to panel
         pane.add(basketball);
         pane.add(football);
         pane.add(baseball);
+        pane.add(BetBasketball);
+        pane.add(BetBaseball);
+        pane.add(BetFootball);
+        pane.add(StatBasket);
+        pane.add(StatBase);
+        pane.add(StatFoot);
         pane.setBackground(Color.DARK_GRAY);
 
         //adds panel to frame
