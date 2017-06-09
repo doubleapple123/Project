@@ -2,6 +2,7 @@ package App;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 /**
  * Created by Leon Chen on 6/9/2017.
@@ -17,9 +18,22 @@ public class DisplayBet {
                 JTextArea showGame = new JTextArea("Thunders at 76ers, Place bet");
                 betField.setPreferredSize(new Dimension(100,40));
 
+                Action action = new AbstractAction() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        Run obj1 = new Run("Won",true);
+                        JTextArea wonField = new JTextArea("thunder win by 9");
+                        JPanel wonPane = new JPanel();
+                        wonPane.add(wonField);
+
+                        obj1.add(wonPane);
+                        obj1.setVisible(true);
+                        obj1.pack();
+                    }
+                };
+                betField.addActionListener(action);
                 betPane.add(showGame);
                 betPane.add(betField);
-
 
                 obj.add(betPane);
                 obj.setVisible(true);

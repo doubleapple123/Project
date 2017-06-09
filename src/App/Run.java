@@ -9,10 +9,16 @@ import javax.swing.*;
 public class Run extends JFrame {
     public Run(){
         super("Default");
-        super.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     public Run(String title){
         super(title);
-        super.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    public Run(String title, Boolean isTrue){
+        super(title);
+        if(isTrue == true){
+            super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        }super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
