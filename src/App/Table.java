@@ -15,15 +15,14 @@ public class Table{
         Object [][] data = {{"0","Thunder at 76ers","10/26/16","8:00 PM","ESPN","Thunder -8.5, Sixers +9.5","Thunder"}
         ,{"1","Rockets at Lakers", "10/26/16","10:30", "ESPN","Rockets -5.5, Lakers +6.5","Rockets"}
         ,{"2","Cavaliers at Raptors", "10/28/16", "7:00 PM", "ESPN","Cavaliers -2, Raptors +3.5","Raptors"}
-        ,{"2","Warriors At Pelicans", "10/28/16", "9:30PM", "ESPN","Warriors -11.5, Pelicans +12.5","Raptors"}
-        ,{"3","Bulls at Celtics","11/2/16","8:00 PM","ESPN","Celtics -2.5, Bulls +3.5","Celtics"}
-        ,{"4","Thunder at Clippers","11/2/16","10:30 PM","ESPN","Clippers -7, Thunder +7.5","Clippers"}
-        ,{"5","Knicks at Bulls","11/4/16","8:00 PM","ESPN","Bulls -7, Knicks +8","Knicks"}
-        ,{"6","Warriors at Lakers",	"11/4/16","10:30 PM","ESPN","Warriors -11.5, Lakers +12.5","Warriors"}
-        ,{"7","Nets at Knicks","11/9/16","7:00 PM","ESPN","Knicks -7.5, Nets +8","Knicks"}
-        ,{"8","Rockets at Spurs","11/9/16","9:30 PM","ESPN","Spurs -8, Rockets +9","Spurs"}
-        ,{"9","Warriors at Raptors","11/16/16","8:00 PM","ESPN","Warriors -7.5, Raptors +8","Warriors"}
-        ,{"10","Grizzlies at Clippers","11/16/16","10:30 PM","ESPN","Clippers -3.5, Grizzlies +5","Grizzlies"}};
+        ,{"3","Warriors At Pelicans", "10/28/16", "9:30PM", "ESPN","Warriors -11.5, Pelicans +12.5","Raptors"}
+        ,{"4","Bulls at Celtics","11/2/16","8:00 PM","ESPN","Celtics -2.5, Bulls +3.5","Celtics"}
+        ,{"5","Thunder at Clippers","11/2/16","10:30 PM","ESPN","Clippers -7, Thunder +7.5","Clippers"}
+        ,{"6","Knicks at Bulls","11/4/16","8:00 PM","ESPN","Bulls -7, Knicks +8","Knicks"}
+        ,{"7","Warriors at Lakers",	"11/4/16","10:30 PM","ESPN","Warriors -11.5, Lakers +12.5","Warriors"}
+        ,{"8","Nets at Knicks","11/9/16","7:00 PM","ESPN","Knicks -7.5, Nets +8","Knicks"}
+        ,{"9","Rockets at Spurs","11/9/16","9:30 PM","ESPN","Spurs -8, Rockets +9","Spurs"}
+        ,{"10","Warriors at Raptors","11/16/16","8:00 PM","ESPN","Warriors -7.5, Raptors +8","Warriors"}};
 
         JTable tab = new JTable(data,col);
 
